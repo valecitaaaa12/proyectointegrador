@@ -1,0 +1,233 @@
+/* ============================================
+   AVIOR CORPORATION - Estilos Globales
+   Colores institucionales: Guindo, Negro, Blanco
+   ============================================ */
+
+:root {
+  --guindo:        #8B0000;
+  --guindo-dark:   #5C0000;
+  --guindo-light:  #A52020;
+  --negro:         #0A0A0A;
+  --negro-soft:    #1A1A1A;
+  --negro-card:    #222222;
+  --negro-border:  #333333;
+  --blanco:        #FFFFFF;
+  --blanco-soft:   #F5F5F5;
+  --blanco-muted:  #CCCCCC;
+  --texto-main:    #FFFFFF;
+  --texto-muted:   #AAAAAA;
+  --sombra:        0 4px 20px rgba(0,0,0,0.4);
+  --sombra-card:   0 2px 12px rgba(0,0,0,0.5);
+  --radius:        10px;
+  --radius-lg:     16px;
+  --trans:         all 0.3s ease;
+  --font-main:     'Segoe UI', 'Arial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--negro);
+  color: var(--texto-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--trans);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-main);
+  border: none;
+  outline: none;
+  transition: var(--trans);
+}
+
+input, select, textarea {
+  font-family: var(--font-main);
+  outline: none;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--negro-soft); }
+::-webkit-scrollbar-thumb { background: var(--guindo); border-radius: 3px; }
+
+/* ---- Utilidades ---- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.section-title span {
+  color: var(--guindo-light);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--texto-muted);
+  font-size: 1rem;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--guindo);
+  margin: 12px auto 40px;
+  border-radius: 2px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--trans);
+}
+
+.btn-primary {
+  background: var(--guindo);
+  color: var(--blanco);
+  border: 2px solid var(--guindo);
+}
+
+.btn-primary:hover {
+  background: var(--guindo-light);
+  border-color: var(--guindo-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139,0,0,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--blanco);
+  border: 2px solid var(--blanco);
+}
+
+.btn-outline:hover {
+  background: var(--blanco);
+  color: var(--negro);
+  transform: translateY(-2px);
+}
+
+.btn-guindo-outline {
+  background: transparent;
+  color: var(--guindo-light);
+  border: 2px solid var(--guindo);
+}
+
+.btn-guindo-outline:hover {
+  background: var(--guindo);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+.card {
+  background: var(--negro-card);
+  border: 1px solid var(--negro-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: var(--trans);
+}
+
+.card:hover {
+  border-color: var(--guindo);
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-card);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--guindo);
+  color: var(--blanco);
+}
+
+/* ---- Animaciones ---- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+.animate-fadeInUp  { animation: fadeInUp  0.6s ease forwards; }
+.animate-fadeIn    { animation: fadeIn    0.5s ease forwards; }
+.animate-slideLeft { animation: slideInLeft 0.6s ease forwards; }
+
+/* ---- Reveal on scroll ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+  .section-title { font-size: 1.6rem; }
+  .container { padding: 0 16px; }
+}

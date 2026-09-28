@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carreras — AVIOR Corporation</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="../assets/logo.png" alt="AVIOR" onerror="this.parentElement.innerHTML='✈'">
+        </div>
+        <div class="nav-logo-text">
+          <strong>AVIOR</strong>
+          <span>Corporation S.R.L.</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="nav-dropdown">
+          <a href="carreras.html" class="active nav-dropdown-toggle">Carreras ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="piloto-civil.html"><span class="dd-icon">✈</span><div><strong>Piloto Civil</strong><small>30 meses · 200 hrs vuelo</small></div></a>
+            <a href="tcp.html"><span class="dd-icon">🛫</span><div><strong>Tripulante de Cabina</strong><small>12 meses · 598 hrs académicas</small></div></a>
+            <a href="eov.html"><span class="dd-icon">📡</span><div><strong>Despachador de Vuelo</strong><small>9 meses · 350 hrs académicas</small></div></a>
+            <div class="dd-divider"></div>
+            <a href="especializaciones.html"><span class="dd-icon">🎓</span><div><strong>Especializaciones</strong><small>TDE · SMS y más</small></div></a>
+          </div>
+        </li>
+        <li><a href="nosotros.html">Conócenos</a></li>
+        <li><a href="sedes.html">Sedes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../login.html" class="nav-cta">🖥 Aula Virtual</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a> › <span>Carreras</span></div>
+      <h1>Nuestras <span>Carreras</span></h1>
+      <p>Programas de formación aeronáutica certificados por la DGAC Bolivia, diseñados para el mercado laboral de la aviación comercial.</p>
+    </div>
+  </section>
+
+  <!-- CARRERAS DETALLE -->
+  <section class="section" style="background:var(--negro)">
+    <div class="container">
+
+      <!-- Piloto Civil -->
+      <div class="carrera-detalle reveal" id="piloto">
+        <div class="carrera-detalle-img">
+          <div class="carrera-img-placeholder pc">
+            <span>✈</span>
+            <p>Piloto Civil</p>
+          </div>
+          <div class="carrera-stats-side">
+            <div class="cs-item"><strong>30</strong><span>meses</span></div>
+            <div class="cs-item"><strong>200</strong><span>hrs vuelo</span></div>
+            <div class="cs-item"><strong>4</strong><span>fases</span></div>
+          </div>
+        </div>
+        <div class="carrera-detalle-info">
+          <span class="badge" style="margin-bottom:12px">PC</span>
+          <h2>Piloto Civil Comercial</h2>
+          <p class="carrera-lead">Domina los cielos con nuestra formación integral de vuelo. Conviértete en piloto comercial certificado con 200 horas de vuelo real.</p>
+          <p style="color:var(--texto-muted);line-height:1.8;margin-bottom:20px">El programa de Piloto Civil está diseñado para formar pilotos altamente capacitados, con dominio técnico y operativo bajo los estándares internacionales de la OACI y la normativa RAB 141 de Bolivia.</p>
+          <h4 style="margin-bottom:12px;color:var(--guindo-light)">4 Fases del Programa</h4>
+          <div class="fases-grid">
+            <div class="fase-item"><div class="fase-num">01</div><div><strong>Piloto Privado (PPL)</strong><p>Fundamentos de vuelo, meteorología, navegación básica y reglamentos aeronáuticos.</p></div></div>
+            <div class="fase-item"><div class="fase-num">02</div><div><strong>Piloto Comercial (CPL)</strong><p>Técnicas avanzadas de vuelo, operaciones en aeropuertos controlados y procedimientos IFR.</p></div></div>
+            <div class="fase-item"><div class="fase-num">03</div><div><strong>Habilitación IFR</strong><p>Vuelo instrumental, navegación por instrumentos y procedimientos de aproximación.</p></div></div>
+            <div class="fase-item"><div class="fase-num">04</div><div><strong>Habilitación Multimotor</strong><p>Operación de aeronaves multimotor, procedimientos de emergencia con motor.</p></div></div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="../login.html" class="btn btn-primary">Inscribirme ahora</a>
+            <a href="contacto.html" class="btn btn-guindo-outline">Solicitar información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carrera-separator"></div>
+
+      <!-- TCP -->
+      <div class="carrera-detalle carrera-detalle-reverse reveal" id="tcp">
+        <div class="carrera-detalle-info">
+          <span class="badge" style="margin-bottom:12px">TCP</span>
+          <h2>Tripulante de Cabina de Pasajeros</h2>
+          <p class="carrera-lead">Garantiza la seguridad y el servicio a bordo con excelencia. Única escuela con <strong style="color:var(--guindo-light)">doble habilitación aeronáutica</strong> en Bolivia.</p>
+          <p style="color:var(--texto-muted);line-height:1.8;margin-bottom:20px">Programa intensivo que forma profesionales en atención al pasajero, seguridad aeronáutica, manejo de emergencias y protocolos de servicio a bordo de aeronaves comerciales.</p>
+          <h4 style="margin-bottom:12px;color:var(--guindo-light)">Incluye</h4>
+          <div class="fases-grid">
+            <div class="fase-item"><div class="fase-num">🛫</div><div><strong>Habilitación BOEING 737 CL/NG</strong><p>Única escuela en Bolivia con habilitación oficial para la flota Boeing 737.</p></div></div>
+            <div class="fase-item"><div class="fase-num">✈</div><div><strong>Habilitación AVRO RJ 70/85/100</strong><p>Certificación para la operación en aeronaves AVRO de las líneas aéreas bolivianas.</p></div></div>
+            <div class="fase-item"><div class="fase-num">🌊</div><div><strong>Práctica de Ditching</strong><p>Entrenamiento real en piscina para procedimientos de evacuación acuática.</p></div></div>
+            <div class="fase-item"><div class="fase-num">🔥</div><div><strong>Combate al Fuego</strong><p>Manejo de extintores y procedimientos de evacuación de emergencia a bordo.</p></div></div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="../login.html" class="btn btn-primary">Inscribirme ahora</a>
+            <a href="contacto.html" class="btn btn-guindo-outline">Solicitar información</a>
+          </div>
+        </div>
+        <div class="carrera-detalle-img">
+          <div class="carrera-img-placeholder tcp">
+            <span>🛫</span>
+            <p>Tripulante de Cabina</p>
+          </div>
+          <div class="carrera-stats-side">
+            <div class="cs-item"><strong>12</strong><span>meses</span></div>
+            <div class="cs-item"><strong>598</strong><span>hrs académicas</span></div>
+            <div class="cs-item"><strong>2</strong><span>habilitaciones</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carrera-separator"></div>
+
+      <!-- EOV -->
+      <div class="carrera-detalle reveal" id="eov">
+        <div class="carrera-detalle-img">
+          <div class="carrera-img-placeholder eov">
+            <span>📡</span>
+            <p>Despachador de Vuelo</p>
+          </div>
+          <div class="carrera-stats-side">
+            <div class="cs-item"><strong>9</strong><span>meses</span></div>
+            <div class="cs-item"><strong>350</strong><span>hrs académicas</span></div>
+            <div class="cs-item"><strong>3</strong><span>meses práctica</span></div>
+          </div>
+        </div>
+        <div class="carrera-detalle-info">
+          <span class="badge" style="margin-bottom:12px">EOV</span>
+          <h2>Despachador de Vuelo</h2>
+          <p class="carrera-lead">Coordina y planifica operaciones aéreas exitosas. Profesional clave en la aviación comercial boliviana.</p>
+          <p style="color:var(--texto-muted);line-height:1.8;margin-bottom:20px">Formación completa en planificación de vuelo, operaciones aeroportuarias, despacho de aeronaves y coordinación de operaciones en tierra y aire, con práctica real en línea aérea.</p>
+          <div class="fases-grid">
+            <div class="fase-item"><div class="fase-num">📖</div><div><strong>Formación Teórica (6 meses)</strong><p>Meteorología, navegación, legislación aeronáutica, planificación de vuelo y operaciones.</p></div></div>
+            <div class="fase-item"><div class="fase-num">✈</div><div><strong>Práctica en Línea Aérea (3 meses)</strong><p>Pasantía real en las líneas aéreas convenidas con AVIOR Corporation.</p></div></div>
+            <div class="fase-item"><div class="fase-num">🖥</div><div><strong>Simulador de Vuelo</strong><p>Uso de simuladores avanzados para ejercicios de planificación y coordinación.</p></div></div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="../login.html" class="btn btn-primary">Inscribirme ahora</a>
+            <a href="contacto.html" class="btn btn-guindo-outline">Solicitar información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-section">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">¿Listo para <span>volar</span>?</h2>
+      <div class="divider"></div>
+      <p style="color:var(--texto-muted);max-width:500px;margin:0 auto 32px">Únete a los más de 1200 egresados de AVIOR Corporation que hoy trabajan en la aviación boliviana e internacional.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
+        <a href="sedes.html" class="btn btn-outline">Ver nuestras sedes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footerPlaceholder"></div>
+  <a href="https://wa.me/59162530806" target="_blank" class="whatsapp-float">💬</a>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

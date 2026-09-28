@@ -1,0 +1,23 @@
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de VS Code (opcional - descomenta si no quieres compartir config)
+# .vscode/
+
+# Archivos de sistema macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (si usas Node en el futuro)
+node_modules/
+
+# Archivos temporales
+*.tmp
+*.bak
+*~

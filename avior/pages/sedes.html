@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedes — AVIOR Corporation</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <div class="nav-logo-icon"><img src="../assets/logo.png" alt="AVIOR" onerror="this.parentElement.innerHTML='✈'"></div>
+        <div class="nav-logo-text"><strong>AVIOR</strong><span>Corporation S.R.L.</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="nav-dropdown">
+          <a href="carreras.html" class="nav-dropdown-toggle">Carreras ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="piloto-civil.html"><span class="dd-icon">✈</span><div><strong>Piloto Civil</strong></div></a>
+            <a href="tcp.html"><span class="dd-icon">🛫</span><div><strong>Tripulante de Cabina</strong></div></a>
+            <a href="eov.html"><span class="dd-icon">📡</span><div><strong>Despachador de Vuelo</strong></div></a>
+            <div class="dd-divider"></div>
+            <a href="especializaciones.html"><span class="dd-icon">🎓</span><div><strong>Especializaciones</strong></div></a>
+          </div>
+        </li>
+        <li><a href="nosotros.html">Conócenos</a></li>
+        <li><a href="sedes.html" class="active">Sedes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="../login.html" class="nav-cta">🖥 Aula Virtual</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a> › <span>Sedes</span></div>
+      <h1>Nuestras <span>Sedes</span></h1>
+      <p>La escuela de aviación más grande de Bolivia. Presentes en 4 ciudades para acercarte la formación aeronáutica de calidad.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--negro)">
+    <div class="container">
+
+      <!-- Selector de sede -->
+      <div class="sede-tabs reveal">
+        <button class="sede-tab active" data-sede="lapaz">🏢 La Paz</button>
+        <button class="sede-tab" data-sede="cbba">🏛 Cochabamba</button>
+        <button class="sede-tab" data-sede="tarija">🏛 Tarija</button>
+        <button class="sede-tab" data-sede="sucre">🏛 Sucre</button>
+      </div>
+
+      <!-- LA PAZ -->
+      <div class="sede-detalle active" id="sede-lapaz">
+        <div class="sede-detalle-grid">
+          <div class="sede-map-placeholder">
+            <div class="map-mock">
+              <div class="map-pin">📍</div>
+              <p>La Paz, Bolivia</p>
+              <small>Av. 6 de Agosto #2530</small>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-primary btn-sm" style="margin-top:12px">Ver en Google Maps</a>
+            </div>
+          </div>
+          <div class="sede-info-detalle">
+            <div class="sede-badge">Base Central</div>
+            <h2>Sede La Paz</h2>
+            <div class="sede-info-items">
+              <div class="sede-info-row"><span class="sdi-icon">📍</span><div><strong>Dirección</strong><p>Av. 6 de Agosto, entre Pedro Salazar y Lisímaco Gutiérrez #2530<br><small style="color:var(--texto-muted)">(Frente al Banco Mutual La Primera)</small></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📞</span><div><strong>Teléfono / WhatsApp</strong><p><a href="tel:+59162530806" style="color:var(--guindo-light)">+591 62530806</a></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">🕐</span><div><strong>Horario de Atención</strong><p>Lun–Vie: 08:30–12:30 / 14:30–18:30</p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📚</span><div><strong>Carreras disponibles</strong>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+                  <span class="badge">TCP</span><span class="badge">Piloto Civil</span><span class="badge">EOV</span>
+                </div>
+              </div></div>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="margin-top:20px">Contactar esta sede</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COCHABAMBA -->
+      <div class="sede-detalle" id="sede-cbba">
+        <div class="sede-detalle-grid">
+          <div class="sede-map-placeholder">
+            <div class="map-mock">
+              <div class="map-pin">📍</div>
+              <p>Cochabamba, Bolivia</p>
+              <small>Av. Segunda esq. Marina Núñez del Prado</small>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-primary btn-sm" style="margin-top:12px">Ver en Google Maps</a>
+            </div>
+          </div>
+          <div class="sede-info-detalle">
+            <div class="sede-badge">Satélite</div>
+            <h2>Sede Cochabamba</h2>
+            <div class="sede-info-items">
+              <div class="sede-info-row"><span class="sdi-icon">📍</span><div><strong>Dirección</strong><p>Av. Segunda, esquina Marina Núñez del Prado<br><small style="color:var(--texto-muted)">(A 3 cuadras del Mercado 10 de Febrero)</small></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📞</span><div><strong>Teléfono / WhatsApp</strong><p><a href="tel:+59177218909" style="color:var(--guindo-light)">+591 77218909</a></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">🕐</span><div><strong>Horario de Atención</strong><p>Lun–Vie: 08:30–17:10</p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📚</span><div><strong>Carreras disponibles</strong>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+                  <span class="badge">TCP</span><span class="badge">Piloto Civil</span><span class="badge">EOV</span>
+                </div>
+              </div></div>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="margin-top:20px">Contactar esta sede</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARIJA -->
+      <div class="sede-detalle" id="sede-tarija">
+        <div class="sede-detalle-grid">
+          <div class="sede-map-placeholder">
+            <div class="map-mock">
+              <div class="map-pin">📍</div>
+              <p>Tarija, Bolivia</p>
+              <small>Calle Ramón Rojas #573</small>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-primary btn-sm" style="margin-top:12px">Ver en Google Maps</a>
+            </div>
+          </div>
+          <div class="sede-info-detalle">
+            <div class="sede-badge">Satélite</div>
+            <h2>Sede Tarija</h2>
+            <div class="sede-info-items">
+              <div class="sede-info-row"><span class="sdi-icon">📍</span><div><strong>Dirección</strong><p>Calle Ramón Rojas, entre Ingavi y Madrid #573<br><small style="color:var(--texto-muted)">(Cerca Plaza Uriondo)</small></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📞</span><div><strong>Teléfono / WhatsApp</strong><p><a href="tel:+59175145330" style="color:var(--guindo-light)">+591 75145330</a></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">🕐</span><div><strong>Horario de Atención</strong><p>Lun–Vie: 08:30–12:30 / 14:30–18:30</p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📚</span><div><strong>Carreras disponibles</strong>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+                  <span class="badge">TCP</span><span class="badge">Piloto Civil</span><span class="badge">EOV</span>
+                </div>
+              </div></div>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="margin-top:20px">Contactar esta sede</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUCRE -->
+      <div class="sede-detalle" id="sede-sucre">
+        <div class="sede-detalle-grid">
+          <div class="sede-map-placeholder">
+            <div class="map-mock">
+              <div class="map-pin">📍</div>
+              <p>Sucre, Bolivia</p>
+              <small>Calle J. Pérez #342</small>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-primary btn-sm" style="margin-top:12px">Ver en Google Maps</a>
+            </div>
+          </div>
+          <div class="sede-info-detalle">
+            <div class="sede-badge">Satélite</div>
+            <h2>Sede Sucre</h2>
+            <div class="sede-info-items">
+              <div class="sede-info-row"><span class="sdi-icon">📍</span><div><strong>Dirección</strong><p>Calle J. Pérez, entre La Paz y Azurduy #342<br><small style="color:var(--texto-muted)">(Frente al Supermercado SAS)</small></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📞</span><div><strong>Teléfono / WhatsApp</strong><p><a href="tel:+59169322199" style="color:var(--guindo-light)">+591 69322199</a></p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">🕐</span><div><strong>Horario de Atención</strong><p>Lun–Vie: 08:30–12:30 / 14:30–18:30</p></div></div>
+              <div class="sede-info-row"><span class="sdi-icon">📚</span><div><strong>Carreras disponibles</strong>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+                  <span class="badge">TCP</span><span class="badge">EOV</span>
+                </div>
+              </div></div>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" style="margin-top:20px">Contactar esta sede</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footerPlaceholder"></div>
+  <a href="https://wa.me/59162530806" target="_blank" class="whatsapp-float">💬</a>
+  <script src="../js/data.js"></script>
+  <script src="../js/pages.js"></script>
+</body>
+</html>

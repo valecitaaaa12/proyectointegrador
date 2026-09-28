@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Académico — AVIOR Corporation</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<div class="dash-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">✈</div>
+      <div class="sidebar-brand">
+        <strong>AVIOR</strong>
+        <span>Sistema Académico</span>
+      </div>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar" id="userAvatar">--</div>
+      <div class="user-info">
+        <strong id="userName">Cargando...</strong>
+        <span id="userRole">—</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebarNav">
+      <!-- generado por JS -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="logout-btn" id="logoutBtn">
+        <span>🚪</span> Cerrar Sesión
+      </button>
+      <button class="logout-btn" id="resetDataBtn" style="margin-top:6px;font-size:.72rem;opacity:.5">
+        <span>🔄</span> Reset datos
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="dash-main">
+    <header class="dash-topbar">
+      <div class="topbar-left">
+        <h2 id="topbarTitle">Panel</h2>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-time" id="topbarTime"></span>
+        <div class="topbar-notif" title="Notificaciones">
+          🔔<span class="notif-dot"></span>
+        </div>
+        <!-- Mobile toggle -->
+        <button id="menuToggle" class="nav-hamburger" style="display:none">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="dash-content" id="dashContent">
+      <!-- módulos cargados por JS -->
+    </main>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
